@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Público - Página Projeto</title>
+  <link rel="stylesheet" href="projeto.css">
+  <style>
+    /* estilo básico do modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .modal {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 700px;
+      position: relative;
+    }
+
+    .modal h2 {
+      margin-top: 0;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 20px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+
+    .pesquisadores {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .pesquisador {
+      text-align: center;
+    }
+
+    .pesquisador img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .arquivo-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .arquivo {
+      text-align: center;
+    }
+
+    .arquivo img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    .visao-geral {
+      font-size: 0.95rem;
+    }
+
+    .visao-geral p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+ 
+
+  <header>
+    <div class="logo-container">
+      <img src="img/img.png" alt="Logo ACALI">
+      <span>ACALI</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">sobre</a></li>
+        <li><a href="#">contato</a></li>
+        <li><a href="#">contato</a></li>
+        <li><a href="#">contato</a></li>
+        <li><a href="#">login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="negrito"> ← outros projetos</p>
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill">21%</div>
+      </div>
+    </div>
+
+    <section class="descricao">
+      <h1>Desenvolvimento e Modernização do Frontend para o Sistema Web Open Connect</h1>
+      <h2>INOVAÇÃO E USABILIDADE PARA UM FUTURO MAIS COLABORATIVO</h2>
+      <p>Este projeto tem como objetivo aprimorar a interface e a experiência do usuário no Open Connect...</p>
+      <p>Além disso, serão adotadas tecnologias modernas para aumentar a acessibilidade...</p>
+    </section>
+
+    <section class="projetos">
+      <div class="projeto" onclick="abrirModal()">Navega+</div>
+      <div class="projeto">Interface Colaborativa</div>
+      <div class="projeto">Open Connect UX+</div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalProjeto">
+    <div class="modal">
+      <button class="close-btn" onclick="fecharModal()">✕</button>
+      <h1>Navega+ </h1>
+  <h5>Seja Bem-vindo </h5>
+      <p>"A pesquisa científica transforma o mundo, impulsiona inovações e resolve desafios da sociedade. Nossa plataforma centraliza o conhecimento, reunindo projetos, publicações e eventos em um único espaço acessível e organizado."
+
+      <div class="pesquisadores">
+        <nav class="pesquisador">
+          <img src="img/pessoa1.png" alt="Pesquisador 1">
+          <p>Diego Machado</p>
+        </nav>
+     <div class="pesquisador">
+          <img src="img/pessoa2.png" alt="Pesquisador 2">
+          <p>Kelin Patricia</p>
+        </div>
+     <div class="pesquisador">
+          <img src="img/pessoa3.png" alt="Pesquisador 3">
+          <p>Renata Smitt</p>
+     </div>
+
+      <div class="pesquisador">
+          <img src="img/pessoa4.png" alt="Pesquisador 4">
+          <p>Wilian Mexicoli</p>
+       </div>
+    <div class="pesquisador">
+          <img src="img/pessoa5.png" alt="Pesquisador 5">
+          <p>Seidiane Lima</p>
+        </div>
+    <div class="pesquisador">
+          <img src="img/pessoa6.png" alt="Pesquisador 6">
+          <p>Denis Dj</p>
+        </div>
+      </div>
+
+      <div class="arquivo-info">
+        <div class="arquivo">
+          <img src="img/🦆 icon _document_.svg" alt="Ícone PDF">
+          <p>arquivo.pdf</p>
+          <a href="https://www.utfpr.edu.br/alunos/portal-do-aluno">🢃  download</a>
+         </div> 
+        <section class="visao-geral">
+          <h6>VISÃO GERAL DO ARQUIVO</h6>
+  <p><img src="img/acali/🦆 icon _eye_.svg" alt="Ícone de visualizações"><strong>Total de Visualizações:</strong><h7>___</h7>12</p>
+  <p><img src="img/acali/🦆 icon _pencil_.svg" alt="Ícone de modificação"><strong>Última modificação:</strong><h7>_____</h7>20/02/2025</p>
+  <p><img src="img/acali/🦆 icon _folder_.svg" alt="Ícone de criador"><strong>Criado por:</strong><h7>_____________</h7>Débora Amnés</p>
+  <p><img src="img/acali/🦆 icon _calendar_.svg" alt="Ícone de data de criação"><strong>Data de criação:</strong><h7>________</h7>05/02/2025</p>
+  <p><img src="img/acali/🦆 icon _share_.svg" alt="Ícone de compartilhamentos"><strong>Compartilhamentos:</strong><h7>_____</h7>10</p>
+        </section>
+           <div class="bolas">
+     <img src="Group 1.svg" alt="Ícone bolas">
+   </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function abrirModal() {
+      document.getElementById('modalProjeto').style.display = 'flex';
+    }
+
+    function fecharModal() {
+      document.getElementById('modalProjeto').style.display = 'none';
+    }
+  </script>
+  
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+
+body {
+  background-image: url('imagem.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+ 
+}
+
+
+header {
+  display: flex;
+  padding: 20px 40px;
+  background-color: #f7f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column; 
+   width: 100px;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  background-color: #e6e3e3;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+
+.progress-container {
+  max-width: 300px;
+  margin: 40px auto 20px;
+}
+
+.progress-bar {
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  height: 30px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.progress-fill {
+  background-color: #10b981;
+  height: 100%;
+  width: 21%;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  border-radius: 50px 0 0 50px;
+  transition: width 0.5s ease;
+  justify-content: flex-end;
+  align-items:flex-end;
+}
+
+
+
+
+main {
+  background-color: #ded9d9c1;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.descricao p {
+  font-size: 10px;
+  margin-bottom: 10px; 
+   
+}
+
+.descricao h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.descricao h2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #474747;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.descricao p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #5c5a5a;
+}
+/*modal*/
+
+.modal-overlay h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+margin: 2px 2px;
+}
+
+.modal-overlay h5 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #000000;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  margin: 2px 2px;
+}
+
+.modal-overlay  {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: 'Lato', sans-serif;
+  color: #4c4c4c;
+  margin-bottom: 20px;
+ 
+}
+
+
+
+/* Projetos */
+.projetos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.projeto {
+  background-color: rgba(0, 0, 0, 0.05);
+  flex: 1;
+  margin: 0 10px;
+  padding: 50px;
+  text-align: center;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+  transform: scale(1.05);
+}
+/*modal*/
+
+
+.modal p{
+ font-weight: bold;
+ color: #8C8C8C;
+}
+.arquivo img {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  border-radius: 12px; 
+  background-color: #e0e0e0;
+  padding: 100px;
+  display: block;
+  margin-top: 60px;
+margin-left: 10px;
+}
+ .arquivo-info p {
+  margin-top: -90px;
+  color: #4c4c4c;
+ 
+ }
+ .arquivo a{
+color: #6c6b6b;
+font-size: 15px;
+  }
+
+
+.bolas img {
+ width: 85px;
+  height: 85px;
+  padding: 10px;
+  justify-content: flex-end;
+  margin-top: -75px;
+  margin-left: 600px;
+
+}
+.visao-geral h6 {
+font-size: 20px;
+  font-weight: normal;
+  color: #131313;
+  margin-bottom: 20px;
+ font-family: "Trajan Pro", serif;
+  
+
+}
+.visao-geral img {
+ width: 25px;
+  height: 25px;
+  padding: 10px;
+  margin: 2px px;
+ 
+}
+.visao-geral p {
+display: flex;
+flex-direction: row;
+align-items: center;
+ color: #8C8C8C;
+font-size: 15px;
+font-weight: normal;
+}
+
+.pesquisador {
+ width: 85px;
+  height: 85px;
+  padding: 10px;
+
+}
+.visao-geral h7{
+color: #ffffff;
+
+
+}
